@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahil Arun Bhoite</title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- MAIN -->
+    <main>
+      <!-- SIDEBAR -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatars.png"
+              alt="Sahil Arun Bhoite"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Sahil Arun Bhoite">
+              Sahil Arun <br />
+              Bhoite
+            </h1>
+
+            <p class="title">Software Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="document-text-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Resume</p>
+
+                <a
+                  href="https://drive.google.com/drive/folders/1nCt8AyhMuRkrWinOO5EUnvWaC0APrgcS?usp=sharing"
+                  class="contact-link"
+                  target="_blank"
+                  >Download Resume</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Linkedin</p>
+
+                <a
+                  href="https://www.linkedin.com/in/sahil-bhoite/"
+                  class="contact-link"
+                  target="_blank"
+                >Connect with Me</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Leetcode</p>
+
+                <a
+                  href="https://leetcode.com/u/Sahil__Bhoite/"
+                  class="contact-link"
+                  target="_blank"
+                > Debugging Dungeon</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="Code"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Code chef</p>
+
+                <a
+                  href="https://www.codechef.com/users/sahil_bhoite"
+                  class="contact-link"
+                  target="_blank"
+                >Cooking Up Code</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Github</p>
+
+                <a
+                  href="https://github.com/Sahil-Bhoite"
+                  class="contact-link"
+                  target="_blank"
+                >Code cold Storage</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:work.sahilbhoite@gmail.com" class="contact-link"
+                  >work.sahilbhoite@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="ribbon-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Certificates</p>
+
+                <a href="https://drive.google.com/drive/folders/1q-Yvy5hjIzUXKReMM4DtF4w25y4liDpd?usp=share_link" class="contact-link" target="_blank"
+                  >Proof I Survived</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Pune, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list"></ul>
+        </div>
+      </aside>
+
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+
+            <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li> -->
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text"> <p> I’m Sahil Bhoite, a final-year B tech student in Electronics and Telecommunications at MIT Academy of Engineering, Pune. I’ve worked on various technologies like full-stack development, AI, machine learning, and data science. </p> <p> I’ve completed multiple projects and an 6-month internship from February to August this year, where I worked on a social media platform backed by AI for factchecking. I actively participate in hackathons to improve my teamwork and problem-solving skills. I solve problems on coding platforms like Codechef.
+ </p> </section>
+
+          <!--
+          - service
+        -->
+        <section class="service">
+          <h3 class="h3 service-title">What I'm Doing</h3>
+        
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img
+                  src="./assets/images/icon-ai.svg"
+                  alt="AI/ML icon"
+                  width="40"
+                />
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning (AI/ML)</h4>
+        
+                <p class="service-item-text">
+                  Leveraging AI and ML to build intelligent systems that learn and improve from data.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img
+                  src="./assets/images/icon-research.svg"
+                  alt="Research icon"
+                  width="40"
+                />
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research on LLMs</h4>
+        
+                <p class="service-item-text">
+                  Conducting advanced research on LLMs to enhance their capabilities across domains.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img
+                  src="./assets/images/icon-data.svg"
+                  alt="Data science icon"
+                  width="40"
+                />
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science</h4>
+        
+                <p class="service-item-text">
+                  Applying data science to extract insights from complex data sets for informed decisions.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img
+                  src="./assets/images/icon-dev.svg"
+                  alt="Web development icon"
+                  width="40"
+                />
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+        
+                <p class="service-item-text">
+                  Creating websites that integrate front-end and back-end technologies for smooth user experiences.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+          <!--
+          - Endorsements 
+        -->
+
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Endorsements </h3>
+
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Suv Patra"
+                    width="60"
+                    data-testimonials-avatar
+                  />
+                </figure>
+
+                <h4
+                  class="h4 testimonials-item-title"
+                  data-testimonials-title
+                >
+                  Dipak Lele
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Sahil Bhoite’s expertise was pivotal in our LLM project for the hackathon. 
+                    His deep knowledge of machine learning and large language models significantly 
+                    enhanced our project’s performance. Sahil’s innovative solutions streamlined 
+                    our model's integration and optimization, resulting in impressive results during 
+                    the competition. His ability to tackle complex problems with creative approaches 
+                    was invaluable, and his contributions were a key factor in our success. I highly 
+                    recommend Sahil for any advanced AI and machine learning projects!
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!--
+        - testimonials modal
+      -->
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img
+                  src="./assets/images/avatar-1.png"
+                  alt="Daniel lewis"
+                  width="80"
+                  data-modal-img
+                />
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+            </div>
+
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Maheshwari Jadhav</h4>
+
+              <time datetime="2021-06-14">14 Sept, 2024</time>
+
+              <div data-modal-text>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--
+        - clients
+      -->
+
+      </article>
+
+      <!--
+      - #RESUME
+    -->
+
+    <article class="resume" data-page="resume">
+      <header>
+        <h2 class="h2 article-title">Resume</h2>
+      </header>
+    
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+          <h3 class="h3">Education</h3>
+        </div>
+    
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              MIT Academy of Engineering, Pune
+            </h4>
+            <span>Dec 2021 – June 2025</span>
+            <p class="timeline-text">
+              Bachelor of Technology in Electronics and Telecommunications | SGPA: 9.0/10
+            </p>
+          </li>
+        </ol>
+      </section>
+    
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="briefcase-outline"></ion-icon>
+          </div>
+          <h3 class="h3">Experience</h3>
+        </div>
+    
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              RecrewAI [GloRoots]
+            </h4>
+            <span>Feb 2025 – Present</span>
+            <p class="timeline-text">
+              <strong>AI Research Intern</strong> <br />
+              1. Developed an <strong>AI interview platform</strong> automating screening, cutting hiring time by <strong>45%</strong> and boosting match accuracy by <strong>35%</strong>. <br />
+              2. Designed a web app for efficient <strong>CV-JD matching, candidate screening, testing, and evaluation</strong>, with advanced prompting.
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Amazon ML Summer School
+            </h4>
+            <span>Aug 2024 – Sep 2024</span>
+            <p class="timeline-text">
+              <strong>Machine Learning Apprenticeship</strong> <br />
+              1. Engineered <strong>LSTM/XGBoost models</strong> for stock prediction, achieving a <strong>15% RMSE reduction</strong> using 30 years of yfinance data. <br />
+              2. Built a <strong>Flask-based</strong> web application to deploy ML models, achieving a <strong>63% prediction accuracy rate</strong> for stock forecasting.
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Vivada Tech
+            </h4>
+            <span>Feb 2024 – Aug 2024</span>
+            <p class="timeline-text">
+              <strong>Software Development Intern</strong> <br />
+              1. Optimized <strong>Spring Boot backend APIs</strong> and <strong>Selenium-based automation</strong>, enhancing reliability by <strong>40%</strong> and response efficiency. <br />
+              2. Built an <strong>LLM-driven fact-checking algorithm</strong> using the <strong>FakeNewsNet dataset</strong>, cutting costs and inference time by <strong>20%</strong>. <br />
+              3. Developed a <strong>collaborative filtering recommendation engine</strong>, increasing user engagement and daily active participation by <strong>30%</strong>.
+            </p>
+          </li>
+        </ol>
+      </section>
+    
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="star-outline"></ion-icon>
+          </div>
+          <h3 class="h3">Projects</h3>
+        </div>
+    
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              MARS: Multi-modal AI Research System - ANN
+            </h4>
+            <span>Nov 2023 – May 2024</span>
+            <p class="timeline-text">
+              1. Built a versatile file ingestion tool processing <strong>26 file types</strong> and <strong>200MB</strong> data, enabling <strong>multimodal insights</strong> via <strong>FAISS ANN</strong>. <br />
+              2. Fine-tuned a <strong>4B parameter LLM model</strong>, achieving <strong>67% MMLU</strong> and <strong>7.84 MT-bench</strong> scores for offline document querying. <br />
+              3. Deployed a <strong>RAG pipeline</strong> with <strong>20+ enhanced capabilities</strong>, improving response accuracy by <strong>30%</strong> and processing speed by <strong>25%</strong>.
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              KSHMR: Kashmir's Specialties Handicrafts & Merchandise Retails - SIH 2023
+            </h4>
+            <span>Oct 2023 – Nov 2023</span>
+            <p class="timeline-text">
+              1. Built an <strong>e-commerce platform</strong> for <strong>100+ Kashmiri specialties</strong>, handling <strong>1000+ daily transactions</strong> with real-time inventory. <br />
+              2. Engineered a <strong>responsive design</strong> with robust <strong>CRUD functionalities</strong>, ensuring optimal performance across all devices.
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              SAHAB: Smart Assistant for Handling Advocacy and Briefings - SIH 2024
+            </h4>
+            <span>Aug 2024 – Sep 2024</span>
+            <p class="timeline-text">
+              1. Developed a comprehensive <strong>multilingual legal AI assistant</strong>, improving information access by <strong>15%</strong> for justice services. <br />
+              2. Implemented robust support for <strong>40+ languages</strong>, including regional Indian dialects, substantially expanding accessibility. <br />
+              3. Created a <strong>RAG architecture</strong> with judicial datasets, improving query accuracy by <strong>25%</strong> and enhancing query accuracy by <strong>10%</strong>.
+            </p>
+          </li>
+        </ol>
+      </section>
+    
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="build-outline"></ion-icon>
+          </div>
+          <h3 class="h3">Skills</h3>
+        </div>
+    
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Programming & Web Technologies
+            </h4>
+            <p class="timeline-text">
+              Python, Java, JavaScript/TypeScript, HTML/CSS, Tailwind CSS
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              AI/ML
+            </h4>
+            <p class="timeline-text">
+              PyTorch, TensorFlow, Transformers, NLP, Computer Vision, LangChain, RAG, OpenAI, HuggingFace
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Data Science & Analytics
+            </h4>
+            <p class="timeline-text">
+              SQL, Tableau, Hadoop, Power BI, Pandas, NumPy, Matplotlib, Seaborn, Excel, Jupyter Notebook
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Cloud & DevOps
+            </h4>
+            <p class="timeline-text">
+              AWS (EC2, S3, Lambda), Docker, Kubernetes, Git, CI/CD, Linux
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Frameworks & Tools
+            </h4>
+            <p class="timeline-text">
+              Spring Boot, Flask, React, RESTful APIs, OpenCV, Selenium, Ollama
+            </p>
+          </li>
+        </ol>
+      </section>
+    
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="ribbon-outline"></ion-icon>
+          </div>
+          <h3 class="h3">Achievements</h3>
+        </div>
+    
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Competitive Programming
+            </h4>
+            <p class="timeline-text">
+              Solved <strong>750+ problems</strong>, <strong>Specialist on Codeforces</strong>, <strong>5-star on CodeChef</strong>, <strong>Knight on LeetCode</strong>.
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Hackathons
+            </h4>
+            <p class="timeline-text">
+              Finalist in <strong>SIH 2023 & 2024</strong>, <strong>Amazon ML Challenge</strong>, and <strong>Flipkart GRiD</strong>. Winner of <strong>FINquest</strong>.
+            </p>
+          </li>
+        </ol>
+      </section>
+    
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="build-outline"></ion-icon>
+          </div>
+    
+          <h3 class="h3">Skills</h3>
+        </div>
+    
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Programming & Web Technologies
+            </h4>
+    
+            <p class="timeline-text">
+              Python, Java, JavaScript, HTML, CSS
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              AI & Machine Learning
+            </h4>
+    
+            <p class="timeline-text">
+              TensorFlow, PyTorch, Scikit-learn, LLMs, NLP, Computer Vision, GANs, Reinforcement Learning
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Data Science & Analytics
+            </h4>
+    
+            <p class="timeline-text">
+              Pandas, NumPy, Matplotlib, Seaborn, SQL, Data Visualization
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Cloud & DevOps
+            </h4>
+    
+            <p class="timeline-text">
+              AWS (Bedrock, StepFunctions), Docker, Kubernetes, Git CI/CD, Unix/Linux
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Frameworks & Tools
+            </h4>
+    
+            <p class="timeline-text">
+              Spring Boot, LangChain, OpenCV, React, RESTful APIs, Ollama, Angular, Selenium, Groovy
+            </p>
+          </li>
+
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Coursework
+            </h4>
+    
+            <p class="timeline-text">
+              Data Structures & Algorithms, Machine Learning, Data Science, Object-Oriented Programming, Operating Systems, Deep Learning Architectures, Database Management Systems, Computer Networks & Internet of Things (IoT)
+            </p>
+          </li>
+        </ol>
+      </section>
+    </article>
+    
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web Development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>AI / ML</button>
+              </li>
+
+              <li class="filter-item">
+                              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ai / ml"
+              >
+                <div class="content-card info-box">
+                  <button
+                    class="skill-button"
+                    data-code-btn
+                    data-link="https://github.com/Sahil-Bhoite/MARS"
+                  >
+                    <svg
+                      viewBox="0 0 20 20"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      fill="#000000"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>github [#142]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g
+                          id="Page-1"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                        >
+                          <g
+                            id="Dribbble-Light-Preview"
+                            transform="translate(-140.000000, -7559.000000)"
+                            fill="#000000"
+                          >
+                            <g
+                              id="icons"
+                              transform="translate(56.000000, 160.000000)"
+                            >
+                              <path
+                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                id="github-[#142]"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div
+                      class="project-item-icon-box"
+                      data-project-btn
+                      data-link="https://m-a-r-s.streamlit.app"
+                    >
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Project-1.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title"> MARS- Multi-modal AI Research System</h3>
+
+                  <p class="project-category">AI / ML</p>
+                </a>
+              </li>
+              <!-- Here it starts -->
+
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <div class="content-card info-box">
+                  <button class="skill-button" data-code-btn data-link="https://github.com/Sahil-Bhoite/CityCalm">
+                    <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                      <g id="SVGRepo_iconCarrier">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                              <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box" data-project-btn data-link="https://city-calm.vercel.app">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/Project-8.png" alt="finance" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">CityCalm - Virtual Walking Experiences</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <!-- Here it starts -->
+
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ai / ml"
+              >
+                <div class="content-card info-box">
+                  <button
+                    class="skill-button"
+                    data-code-btn
+                    data-link="https://github.com/Sahil-Bhoite/K.A.R.M"
+                  >
+                    <svg
+                      viewBox="0 0 20 20"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      fill="#000000"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>github [#142]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g
+                          id="Page-1"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                        >
+                          <g
+                            id="Dribbble-Light-Preview"
+                            transform="translate(-140.000000, -7559.000000)"
+                            fill="#000000"
+                          >
+                            <g
+                              id="icons"
+                              transform="translate(56.000000, 160.000000)"
+                            >
+                              <path
+                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                id="github-[#142]"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div
+                      class="project-item-icon-box"
+                      data-project-btn
+                      data-link="https://k-a-r-m-a.streamlit.app"
+                    >
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Project-2.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">KARM: Knowledge-Enhanced Assistance for Resume Management </h3>
+
+                  <p class="project-category">AI / ML</p>
+                </a>
+              </li>
+
+              <!-- Here it ends -->
+              <!-- Here it starts -->
+
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <div class="content-card info-box">
+                  <button class="skill-button" data-code-btn data-link="https://github.com/Sahil-Bhoite/KSHMR">
+                    <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                      <g id="SVGRepo_iconCarrier">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                              <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box" data-project-btn data-link="https://github.com/Sahil-Bhoite/KSHMR">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/Project-6.png" alt="finance" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">KSHMR - Kashmir's Specialties Handicrafts & Merchandise Retails</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <div class="content-card info-box">
+                  <button class="skill-button" data-code-btn data-link="https://github.com/Sahil-Bhoite/GlassCall">
+                    <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                      <g id="SVGRepo_iconCarrier">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                              <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box" data-project-btn data-link="https://glass-call.vercel.app">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/Project-7.png" alt="finance" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">GlassCall  - Modern, high-performance video calling application</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <div class="content-card info-box">
+                  <button class="skill-button" data-code-btn data-link="https://github.com/Sahil-Bhoite/ContestBug">
+                    <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                      <g id="SVGRepo_iconCarrier">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                              <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box" data-project-btn data-link="https://github.com/Sahil-Bhoite/ContestBug">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/Project-10.png" alt="finance" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">ContestHub - to streamline contest management and participation.</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <div class="content-card info-box">
+                  <button class="skill-button" data-code-btn data-link="https://github.com/Sahil-Bhoite/">
+                    <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                      <g id="SVGRepo_iconCarrier">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                              <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box" data-project-btn data-link="https://github.com/Sahil-Bhoite/ContestBug">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/Project-9.png" alt="finance" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">OceanGuard, meticulously crafted to raise awareness about the perils of deep-sea mining.</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              
+
+
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ai / ml"
+              >
+                <div class="content-card info-box">
+                  <button
+                    class="skill-button"
+                    data-code-btn
+                    data-link="https://github.com/Sahil-Bhoite/SAHAB"
+                  >
+                    <svg
+                      viewBox="0 0 20 20"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      fill="#000000"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>github [#142]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g
+                          id="Page-1"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                        >
+                          <g
+                            id="Dribbble-Light-Preview"
+                            transform="translate(-140.000000, -7559.000000)"
+                            fill="#000000"
+                          >
+                            <g
+                              id="icons"
+                              transform="translate(56.000000, 160.000000)"
+                            >
+                              <path
+                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                id="github-[#142]"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div
+                      class="project-item-icon-box"
+                      data-project-btn
+                      data-link="https://sahab-demo.streamlit.app"
+                    >
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Project-4.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">SAHAB - Smart Assistant for Handling Advocacy and Briefings </h3>
+
+                  <p class="project-category">AI / ML</p>
+                </a>
+              </li>
+
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ai / ml"
+              >
+                <div class="content-card info-box">
+                  <button
+                    class="skill-button"
+                    data-code-btn
+                    data-link="https://github.com/Sahil-Bhoite/WallE"
+                  >
+                    <svg
+                      viewBox="0 0 20 20"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      fill="#000000"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>github [#142]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g
+                          id="Page-1"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                        >
+                          <g
+                            id="Dribbble-Light-Preview"
+                            transform="translate(-140.000000, -7559.000000)"
+                            fill="#000000"
+                          >
+                            <g
+                              id="icons"
+                              transform="translate(56.000000, 160.000000)"
+                            >
+                              <path
+                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                id="github-[#142]"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div
+                      class="project-item-icon-box"
+                      data-project-btn
+                      data-link="https://github.com/Sahil-Bhoite/WallE"
+                    >
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Project-5.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">WallE: Walmart's AI Shopping Assistant </h3>
+
+                  <p class="project-category">AI / ML</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ai / ml"
+              >
+                <div class="content-card info-box">
+                  <button
+                    class="skill-button"
+                    data-code-btn
+                    data-link="https://github.com/Sahil-Bhoite/BullsAI"
+                  >
+                    <svg
+                      viewBox="0 0 20 20"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      fill="#000000"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>github [#142]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g
+                          id="Page-1"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                        >
+                          <g
+                            id="Dribbble-Light-Preview"
+                            transform="translate(-140.000000, -7559.000000)"
+                            fill="#000000"
+                          >
+                            <g
+                              id="icons"
+                              transform="translate(56.000000, 160.000000)"
+                            >
+                              <path
+                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                id="github-[#142]"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div
+                      class="project-item-icon-box"
+                      data-project-btn
+                      data-link="https://bullai.streamlit.app"
+                    >
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Project-3.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title"> Bull's AI: Algorithmic Stock Prediction</h3>
+
+                  <p class="project-category">AI / ML</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+  
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form
+              action="https://formspree.io/f/xyzgakgq"
+              method="post"
+              class="form"
+              data-form
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                rows="15"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
