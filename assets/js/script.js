@@ -64,28 +64,15 @@ select.addEventListener("click", function () {
 // project btn
 const projectItems = document.querySelectorAll(".project-item");
 
-const view = document.querySelector("[data-project-btn]");
-const code = document.querySelector("[data-code-btn]");
-
-view.addEventListener("click", function () {
-  window.open(this.getAttribute("data-link")).focus();
-});
-
-code.addEventListener("click", function () {
-  window.open(this.getAttribute("data-link")).focus();
-});
-
 for (let i = 0; i < projectItems.length; i++) {
   const view = projectItems[i].querySelector("[data-project-btn]");
-  const code = projectItems[i].querySelector("[data-code-btn]");
-
-  view.addEventListener("click", function () {
-    window.open(this.getAttribute("data-link")).focus();
-  });
-
-  code.addEventListener("click", function () {
-    window.open(this.getAttribute("data-link")).focus();
-  });
+  if (view) {
+    view.addEventListener("click", function (e) {
+      e.stopPropagation();
+      e.preventDefault();
+      window.open(this.closest("a").href).focus();
+    });
+  }
 }
 
 // add event in all select items
