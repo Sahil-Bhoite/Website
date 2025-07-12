@@ -215,8 +215,10 @@ article {
 
 .grey-theme .avatar-box,
 .grey-theme .testimonials-avatar-box,
-.grey-theme .modal-avatar-box {
-  background: transparent !important;
+.grey-theme .modal-avatar-box,
+.grey-theme .testimonials-item .content-card {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px);
   box-shadow: none !important;
 }
 
