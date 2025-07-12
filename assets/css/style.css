@@ -154,6 +154,20 @@ body {
   background: var(--smoky-black);
 }
 
+#bg-video {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+body.grey-theme #bg-video {
+  display: block;
+}
+
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -168,6 +182,46 @@ article {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   z-index: 1;
   transition: var(--transition-2);
+}
+
+.grey-theme .sidebar,
+.grey-theme article,
+.grey-theme .service-item,
+.grey-theme .content-card,
+.grey-theme .info-content .title,
+.grey-theme .icon-box,
+.grey-theme .form-btn,
+.grey-theme .testimonials-modal {
+  background: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(10px);
+}
+
+.grey-theme .service-item::before,
+.grey-theme .content-card::before,
+.grey-theme .icon-box::before,
+.grey-theme .form-btn::before {
+  background: transparent !important;
+}
+
+.grey-theme :is(h2, h3, h4, h5, p, a, time, address, span, .name, .title, .navbar-link, .contact-title, .testimonials-item-title, .timeline-item-title, .service-item-text, .modal-title, .modal-content p) {
+  color: var(--smoky-black) !important;
+  text-shadow: none !important;
+}
+
+.grey-theme .icon-box,
+.grey-theme .navbar-link.active {
+  color: var(--smoky-black) !important;
+}
+
+.grey-theme .avatar-box,
+.grey-theme .testimonials-avatar-box,
+.grey-theme .modal-avatar-box {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.grey-theme .article-title::after {
+  background: var(--smoky-black) !important;
 }
 
 .separator {
