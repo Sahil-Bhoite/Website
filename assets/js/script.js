@@ -48,8 +48,12 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+if (modalCloseBtn) {
+  modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+}
+if (overlay) {
+  overlay.addEventListener("click", testimonialsModalFunc);
+}
 
 // custom select variables
 const select = document.querySelector("[data-select]");
@@ -261,4 +265,14 @@ const skillsHTML = skills
   .join("");
 
 // Set the HTML of the skills list element
-skillsList.innerHTML = skillsHTML;
+if (skillsList) {
+  skillsList.innerHTML = skillsHTML;
+}
+
+// video randomizer
+const video = document.getElementById("bg-video");
+if (video) {
+  video.addEventListener("loadedmetadata", function () {
+    video.currentTime = Math.random() * video.duration;
+  });
+}
