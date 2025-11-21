@@ -272,7 +272,15 @@ if (skillsList) {
 // video randomizer
 const video = document.getElementById("bg-video");
 if (video) {
-  video.addEventListener("loadedmetadata", function () {
-    video.currentTime = Math.random() * video.duration;
-  });
+  const setRandomTime = () => {
+    if (video.duration) {
+      video.currentTime = Math.random() * video.duration;
+    }
+  };
+
+  if (video.readyState >= 1) {
+    setRandomTime();
+  } else {
+    video.addEventListener("loadedmetadata", setRandomTime);
+  }
 }
