@@ -2312,11 +2312,18 @@ body::-webkit-scrollbar-thumb:hover {
   .sidebar {
     position: sticky;
     top: 60px;
-    max-height: max-content;
-    height: 100%;
+    max-height: calc(100vh - 60px);
+    height: auto;
     margin-bottom: 0;
     padding-top: 60px;
     z-index: 1;
+    overflow-y: auto;
+    align-self: flex-start;
+    scrollbar-width: none;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    display: none;
   }
 
   .sidebar-info {
