@@ -1,0 +1,524 @@
+/* Skeuomorphism + Glassmorphism (Dual Theme: Dark & Light 3D Glass) */
+
+:root {
+    /* --- DARK THEME VARIABLES (Default) --- */
+    --bg-dark-base: #0b0b0b;
+    --glass-dark-surface: rgba(20, 20, 20, 0.65);
+    --glass-dark-border: rgba(255, 255, 255, 0.08);
+
+    --shadow-dark-glass-3d:
+        10px 10px 20px rgba(0, 0, 0, 0.8),
+        -5px -5px 15px rgba(255, 255, 255, 0.05);
+
+    --btn-dark-bg: rgba(30, 30, 30, 0.4);
+    --btn-dark-shadow:
+        6px 6px 12px rgba(0, 0, 0, 0.6),
+        -4px -4px 10px rgba(255, 255, 255, 0.05),
+        inset 1px 1px 0 rgba(255, 255, 255, 0.1);
+
+    --input-dark-bg: rgba(10, 10, 10, 0.5);
+    --input-dark-shadow:
+        inset 4px 4px 8px #000000,
+        inset -2px -2px 8px rgba(255, 255, 255, 0.05);
+
+    /* --- LIGHT / VIDEO THEME VARIABLES (.grey-theme) --- */
+    /* Real Glass: more transparency, less opacity, gradient sheen */
+    --glass-light-surface: linear-gradient(125deg,
+            rgba(255, 255, 255, 0.15) 0%,
+            /* Subtle top-left shine */
+            rgba(255, 255, 255, 0.05) 100%
+            /* Fades out */
+        );
+    --glass-light-border: rgba(255, 255, 255, 0.15);
+    /* Very subtle crisp edge */
+
+    --shadow-light-glass-3d:
+        0 4px 30px rgba(0, 0, 0, 0.1),
+        /* Deep blur shadow */
+        inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+    /* Inner glass rim */
+
+    /* Glassy Buttons */
+    --btn-light-bg: rgba(255, 255, 255, 0.2);
+    --btn-light-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+
+    /* Glassy Inputs */
+    --input-light-bg: rgba(0, 0, 0, 0.05);
+    /* Slightly dark to recede */
+    --input-light-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.1),
+        0 1px 0 rgba(255, 255, 255, 0.2);
+
+    /* Common */
+    --accent-color: #ffdb70;
+}
+
+/* =========================================
+   DEFAULT DARK THEME (Body: not .grey-theme)
+   ========================================= */
+
+body:not(.grey-theme) {
+    background: var(--bg-dark-base) !important;
+    color: #d1d5db;
+}
+
+/* Sidebar & Article - Dark 3D Glass */
+body:not(.grey-theme) .sidebar,
+body:not(.grey-theme) article {
+    background: var(--glass-dark-surface) !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    box-shadow: var(--shadow-dark-glass-3d) !important;
+    border: 1px solid var(--glass-dark-border) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 24px;
+}
+
+/* Elements - Dark Mode */
+body:not(.grey-theme) .filter-btn,
+body:not(.grey-theme) .form-btn,
+body:not(.grey-theme) .mapbox,
+body:not(.grey-theme) .contact-item-direct,
+body:not(.grey-theme) .social-item-direct a {
+    background: var(--btn-dark-bg) !important;
+    box-shadow: var(--btn-dark-shadow) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+body:not(.grey-theme) :is(input, textarea, .filter-select) {
+    background: var(--input-dark-bg) !important;
+    box-shadow: var(--input-dark-shadow) !important;
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+body:not(.grey-theme) .project-item>a,
+body:not(.grey-theme) .service-item,
+body:not(.grey-theme) .testimonials-item-content {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.2) 100%) !important;
+    box-shadow: 6px 6px 12px #050505, -2px -2px 8px rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    height: 100%;
+    /* Fill the grid cell */
+    display: flex;
+    flex-direction: column;
+}
+
+body:not(.grey-theme) .project-item>a .project-title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Dark Theme Avatar Box (Transparent Cutout Support) */
+body:not(.grey-theme) .avatar-box {
+    background: none !important;
+    /* Removed radial gradient */
+    box-shadow: none !important;
+    border: none !important;
+    /* Optional: Add a glow behind the head instead of a box */
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+body:not(.grey-theme) .icon-box {
+    background: linear-gradient(145deg, #151515, #0a0a0a) !important;
+    box-shadow: 5px 5px 10px #000, -2px -2px 5px rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+/* =========================================
+   LIGHT / VIDEO THEME (Body: .grey-theme)
+   ========================================= */
+
+body.grey-theme {
+    background: transparent !important;
+    /* Let the video show through */
+    color: #111 !important;
+    /* Sharper Black for text */
+}
+
+/* Sidebar & Article - Dynamic Real Glass */
+body.grey-theme .sidebar,
+body.grey-theme article {
+    background: var(--glass-light-surface) !important;
+    backdrop-filter: blur(15px) !important;
+    /* Reduced blur for realism */
+    -webkit-backdrop-filter: blur(15px) !important;
+    box-shadow: var(--shadow-light-glass-3d) !important;
+
+    /* Remove the solid border, use subtle ring instead */
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 24px;
+}
+
+/* Elements - Light Mode (Frosted glass chips) */
+body.grey-theme .filter-btn,
+body.grey-theme .form-btn,
+body.grey-theme .mapbox,
+body.grey-theme .contact-item-direct,
+body.grey-theme .social-item-direct a {
+    background: var(--btn-light-bg) !important;
+    box-shadow: var(--btn-light-shadow) !important;
+    color: #222 !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(5px);
+}
+
+body.grey-theme :is(input, textarea, .filter-select) {
+    background: var(--input-light-bg) !important;
+    box-shadow: var(--input-light-shadow) !important;
+    color: #111 !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+body.grey-theme .project-item>a,
+body.grey-theme .service-item,
+body.grey-theme .testimonials-item-content {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+    border-radius: 16px !important;
+    overflow: hidden;
+    height: 100%;
+    /* Fill grid cell */
+    display: flex;
+    flex-direction: column;
+}
+
+body.grey-theme .project-title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+body.grey-theme .avatar-box {
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Use the image itself for the effect */
+body.grey-theme .avatar-box img {
+    /* Subtle shadow for the cutout */
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.2));
+    box-shadow: none !important;
+}
+
+body.grey-theme .icon-box {
+    background: rgba(255, 255, 255, 0.8) !important;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    color: #333 !important;
+}
+
+/* Text Colors for Light Theme */
+body.grey-theme :is(h1, h2, h3, h4, h5, p, span, a, li, button, label) {
+    color: #111 !important;
+    text-shadow: none !important;
+}
+
+/* Except highlighted text might need color */
+body.grey-theme .highlight {
+    color: var(--accent-color) !important;
+}
+
+/* =========================================
+   COMMON FIXES & OVERRIDES
+   ========================================= */
+
+/* =========================================
+   AVATAR - Fully Transparent & Floating (Final Override)
+   ========================================= */
+
+/* Reset all avatar box styling with high specificity */
+html body .sidebar .sidebar-info .avatar-box,
+html body .sidebar .sidebar-info .avatar-box img,
+html body .sidebar .sidebar-info .avatar-box::before,
+html body .sidebar .sidebar-info .avatar-box::after {
+    border-radius: 0 !important;
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+/* Override hover effects that add box-shadow */
+.avatar-box:hover {
+    box-shadow: none !important;
+    transform: scale(1.02);
+    /* Gentle zoom instead of glow */
+}
+
+/* Dark Theme - Character glow effect */
+body:not(.grey-theme) .avatar-box img {
+    filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 8px rgba(255, 219, 112, 0.15));
+    /* Subtle gold halo */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+body:not(.grey-theme) .avatar-box:hover img {
+    filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 15px rgba(255, 219, 112, 0.25));
+    transform: translateY(-3px);
+}
+
+/* Light Theme - Softer floating effect */
+body.grey-theme .avatar-box img {
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.25)) drop-shadow(0 2px 5px rgba(0, 0, 0, 0.15));
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+body.grey-theme .avatar-box:hover img {
+    filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.3)) drop-shadow(0 3px 8px rgba(0, 0, 0, 0.2));
+    transform: translateY(-3px);
+}
+
+/* Separator - Adaptive */
+.separator {
+    background: transparent !important;
+    height: 2px !important;
+    box-shadow: none !important;
+    margin: 25px 0 !important;
+}
+
+body:not(.grey-theme) .separator {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #222;
+}
+
+body.grey-theme .separator {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Common Hover Effects */
+.filter-btn:hover,
+.filter-btn.active,
+.form-btn:hover,
+.social-item-direct a:hover {
+    transform: translateY(-2px);
+    /* Accent color text on hover for both */
+    color: var(--accent-color) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
+
+body:not(.grey-theme) ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+body:not(.grey-theme) ::-webkit-scrollbar-thumb {
+    background: #222;
+    border: 1px solid #000;
+}
+
+body.grey-theme ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+body.grey-theme ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+body.grey-theme .separator {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* =========================================
+   TESTIMONIALS / ENDORSEMENTS
+   ========================================= */
+
+/* Dark Theme - Testimonial Cards */
+body:not(.grey-theme) .testimonials-item .content-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.2) 100%) !important;
+    box-shadow: 6px 6px 12px #050505, -2px -2px 8px rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px;
+}
+
+/* Light Theme - Testimonial Cards */
+body.grey-theme .testimonials-item .content-card {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(5px);
+    border-radius: 16px;
+}
+
+/* MODALS */
+
+/* Modal Overlay (Glass Effect for Background) */
+.overlay.active {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Modal Content (Dark) */
+body:not(.grey-theme) .testimonials-modal {
+    background: var(--glass-dark-surface) !important;
+    /* Use variable */
+    box-shadow: var(--shadow-dark-glass-3d) !important;
+    border: 1px solid var(--glass-dark-border) !important;
+    border-radius: 24px;
+    /* Removed backdrop-filter from here to prevent freeze during animation */
+}
+
+/* Modal Content (Light) */
+body.grey-theme .testimonials-modal {
+    background: var(--glass-light-surface) !important;
+    box-shadow: var(--shadow-light-glass-3d) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 24px;
+    /* Removed backdrop-filter from here */
+}
+
+body:not(.grey-theme) .modal-content,
+body.grey-theme .modal-content {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+/* =========================================
+   NAVIGATION BAR
+   ========================================= */
+
+/* Dark Theme Navbar Container */
+body:not(.grey-theme) .navbar {
+    background: rgba(20, 20, 20, 0.8) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+    border-radius: 20px 20px 0 0;
+    /* Rounded top on mobile, fully rounded on desktop usually handled by media queries, but sticking to general shape */
+}
+
+/* Dark Theme Navbar Links */
+body:not(.grey-theme) .navbar-link {
+    color: #d1d5db !important;
+    transition: all 0.3s ease;
+}
+
+body:not(.grey-theme) .navbar-link:hover,
+body:not(.grey-theme) .navbar-link.active {
+    color: var(--accent-color) !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Light Theme Navbar Container */
+body.grey-theme .navbar {
+    background: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Light Theme Navbar Links */
+body.grey-theme .navbar-link {
+    color: #333 !important;
+}
+
+body.grey-theme .navbar-link:hover,
+body.grey-theme .navbar-link.active {
+    color: var(--accent-color) !important;
+    font-weight: 600;
+}
+
+/* Desktop Styles Overrides (if needed) */
+@media (min-width: 1024px) {
+
+    /* Make navbar float like an island on desktop */
+    body:not(.grey-theme) .navbar,
+    body.grey-theme .navbar {
+        border-radius: 20px !important;
+    }
+}
+
+/* =========================================
+   MOBILE SIDEBAR TOGGLE (.info_more-btn)
+   ========================================= */
+
+/* Dark Theme Toggle */
+body:not(.grey-theme) .info_more-btn {
+    background: var(--btn-dark-bg) !important;
+    box-shadow: var(--btn-dark-shadow) !important;
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 12px 12px 0 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+body:not(.grey-theme) .info_more-btn:hover,
+body:not(.grey-theme) .info_more-btn:focus {
+    color: var(--accent-color) !important;
+    transform: translateY(-2px);
+}
+
+/* Light Theme Toggle */
+body.grey-theme .info_more-btn {
+    background: var(--btn-light-bg) !important;
+    box-shadow: var(--btn-light-shadow) !important;
+    color: #222 !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(5px);
+    border-radius: 12px 12px 0 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+body.grey-theme .info_more-btn:hover,
+body.grey-theme .info_more-btn:focus {
+    color: var(--accent-color) !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   GLOBAL INTERACTION POLISH
+   ========================================= */
+
+/* Text Selection - Gold Highlight */
+::selection {
+    background: rgba(255, 219, 112, 0.3);
+    /* Transparent Accent */
+    color: #ffdb70;
+}
+
+/* Smooth Transitions for Theme Switch */
+body,
+.sidebar,
+article,
+.navbar,
+.icon-box,
+.project-item>a {
+    transition: background 0.5s ease, box-shadow 0.5s ease, color 0.3s ease, border-color 0.5s ease !important;
+}
+
+/* Force Scrollbar visibility on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #222 #0a0a0a;
+}
+
+body.grey-theme * {
+    scrollbar-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.5);
+}
